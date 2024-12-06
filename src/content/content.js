@@ -1,10 +1,10 @@
 console.log('LinkedIn Connect Extension: Content script started');
 
-// Check if script is executing on the correct page
+
 if (window.location.href.includes('linkedin.com/mynetwork/grow')) {
   console.log('LinkedIn Grow Network page detected');
 
-  // Create the button
+  
   const container = document.createElement('div');
   container.id = 'linkedin-extension-root';
   container.style.position = 'fixed';
@@ -26,7 +26,7 @@ if (window.location.href.includes('linkedin.com/mynetwork/grow')) {
     console.error('Error appending the button:', error);
   }
 
-  // Add click functionality
+  
   container.addEventListener('click', () => {
     console.log('Connect with All button clicked');
 
